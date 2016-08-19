@@ -1,0 +1,76 @@
+body {
+    background-color: darkgrey;
+}
+
+.clearfix {
+    clear: both;
+    float: left;
+}
+
+.wrapper {
+    margin: 0 auto;
+    padding: 0 10px;
+    width: 940px;
+}
+
+/* Header styles */
+header {
+    height: 120px;
+}
+
+header h1 {
+    float: left;
+    margin-top: 32px;
+    color: #fff;
+}
+
+header nav {
+    float: right;
+}
+
+header nav ul li {
+    float: left;
+    display: inline-block;
+    margin-top: 30px;
+}
+
+header nav ul li a {
+    color: #fff;
+    font-weight: bold;
+    display: block;
+    margin-right: 20px;
+}
+
+/* Footer styles*/
+
+.footer {
+    height: 150px;
+    background-color: lightgrey;
+}
+
+.copy {
+    float: left;
+    margin-right: 330px;
+}
+
+.partner {
+    float: left;
+}
+
+.links {
+    float: right;
+}
+
+/* Content*/
+
+.content {
+    padding: 40px;
+    height: 500px;
+    background-color: navajowhite;
+}
+
+aside {
+    float: right;
+    height: 500px;
+    background-color: navajowhite;
+}
