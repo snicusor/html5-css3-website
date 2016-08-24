@@ -3,71 +3,53 @@
     padding: 0;
 }
 
-h1 {
+.updates {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 50px 200px;
+    background-color: greenyellow;
+}
+
+.header {
+    display: flex;
+    justify-content: center;
     font-size: 40px;
     font-family: Helvetica Neue, Arial, sans-serif;
-    margin-top: 50px;
+    background-color: greenyellow;
+    padding-top: 20px;
+    font-weight: bold;
+}
+
+.updates-footer {
+    display: flex;
+    justify-content: center;
+    font-size: 20px;
+    font-family: Helvetica Neue, Arial, sans-serif;
+    background-color: greenyellow;
+    padding: 10px 0 50px;
+}
+
+.updates-footer p {
     text-align: center;
+    width: 200px;
+    padding: 10px 10px;
+    background-color: greenyellow;
+    border: 3px solid black;
 }
 
-.container {
-    width: 100%;
-    padding-bottom: 30px;
-    overflow: hidden;
-    background-color: lightgreen;
+.item {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+    height: auto;
 }
 
-.galleryItem {
-    color: #797478;
-    font: 10px/1.5 Verdana, Helvetica, sans-serif;
-    float: left;
-}
-
-.galleryItem h3 {
-    text-transform: capitalize;
-}
-
-.galleryItem img {
-    max-width: 100%;
-    -webkit-border-radius: 5px;
-    -moz-border-radius: 5px;
-    border-radius: 5px;
-}
-
-.galleryItem {
-    color: #797478;
-    font: 10px/1.5 Verdana, Helvetica, sans-serif;
-    float: left;
-
-    width: 35%;
-    margin:  2% 2% 50px 9%;
-}
-
-.galleryItem + p,h3,p {
-    background: #fff;
+.item > * {
+    display: flex;
+    flex-direction: column;
     width: 460px;
-    border-radius: 5px;
-}
-
-.container footer {
-    width: 150px;
-    border: 2px solid black;
-    color: black;
-    padding: 6px 20px;
-    -webkit-border-radius: 3px;
-    -moz-border-radius: 3px;
-    border-radius: 3px;
-    clear: both;
-    margin: 0 auto;
-}
-
-.container footer p {
-    background: transparent;
-}
-
-.container footer:hover {
-    background-color: black;
-    color: #fff;
+    background: #fff;
 }
 
 .clients {
@@ -76,12 +58,12 @@ h1 {
     width: 100%;
 }
 
-.clients h3 {
+.clients h4 {
     padding: 40px;
     text-align: center;
     background: transparent;
-    font-size: 30px;
-    font-family: Helvetica Neue, Arial, sans-serif;
+    font-size: 1.5rem;
+    font-family: "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
 }
 
 .clients-logos {
@@ -94,45 +76,54 @@ h1 {
 }
 
 .center {
-    text-align: center;
-    padding-top: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px 400px;
 }
 
-.container-tweet {
+body {
     background-color: deepskyblue;
-    height: 300px;
 }
 
-.tweet a {
-    margin-top: 30px;
-    display: block;
-    float: left;
+.twitter {
+    display: flex;
+    justify-content: space-around;
+    margin: 70px 200px ;
 }
 
-.small{
-    margin-top: 30px;
-    margin-left: 50px;
-    height: 50px;
+.tweet {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #fff;
+    padding: 20px 20px;
+    margin-right: 30px;
 }
-.clear {
-    clear: both;
-    height: 50px;
+
+.tweet img {
+    margin-right: 10px;
+}
+
+.tweet > :nth-child(2) {
+    margin-bottom: 30px;
+}
+
+.tweet > :nth-child(3) {
+    margin-bottom: 20px;
+}
+
+small {
+    color: darkgrey;
 }
 
 .contact {
+    display: flex;
+    justify-content: space-around;
     height: 400px;
-    background-color: grey;
-    opacity: 0.5;
-}
-
-.address {
-    color: darkgreen;
-    float: left;
-}
-
-.address-1 {
-    color: darkgreen;
-    float: right;
+    background: url(map.png) no-repeat;
+    -webkit-background-size: cover;
+    background-size: cover;
+    padding-top: 40px;
 }
 
 .partners {
@@ -142,11 +133,12 @@ h1 {
     background-color: greenyellow;
 }
 
-.flex {
+.footer {
+    background-color: dimgrey;
     display: flex;
     justify-content: space-around;
     align-items: center;
-    height: 50px;
+    height: 70px;
 }
 
 @media only screen and (max-width : 940px),
