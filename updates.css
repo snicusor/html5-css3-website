@@ -45,6 +45,8 @@ h1 {
 
 .galleryItem + p,h3,p {
     background: #fff;
+    width: 460px;
+    border-radius: 5px;
 }
 
 .container footer {
@@ -136,26 +138,15 @@ h1 {
 .partners {
     padding-top: 90px;
     text-align: center;
-    height: 300px;
+    height: 200px;
     background-color: greenyellow;
 }
 
-.footer {
-    height: 150px;
-    background-color: lightgrey;
-}
-
-.copy {
-    float: left;
-    margin-right: 330px;
-}
-
-.partner {
-    float: left;
-}
-
-.links {
-    float: right;
+.flex {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 50px;
 }
 
 @media only screen and (max-width : 940px),
