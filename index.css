@@ -28,7 +28,7 @@ header nav ul li a {
 
 /* Video styles */
 
-video#bgvid {
+video #bgvid {
     position: fixed;
     top: 50%;
     left: 50%;
